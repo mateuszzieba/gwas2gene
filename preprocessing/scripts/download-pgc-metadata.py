@@ -79,4 +79,7 @@ df['link2gzfiles'] = link2gzfiles
 # add new column link2zipfiles to df
 df['link2zipfiles'] = link2zipfiles
 
+# create new column with file_name_output, by "raw/" + publication + ".meta.gz" 
+df['file_name_output'] = 'raw/' + df['publication'] + '.meta.gz'
+
 df
